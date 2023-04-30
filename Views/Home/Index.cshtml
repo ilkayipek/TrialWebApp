@@ -10,10 +10,10 @@
 </div>
 <tbady>
     @{
-        foreach (Kategori item in ViewBag.kategori)
+        foreach (Category item in ViewBag.kategori)
         {
-            <h1>@item.kategoriAd</h1>
-            <h1>@item.kategoriAdet</h1>
+            <h1>@item.name</h1>
+            <h1>@item.piece</h1>
         }
     }
 </tbady>

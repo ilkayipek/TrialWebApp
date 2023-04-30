@@ -4,20 +4,21 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace TrialWebApp.DataBase
 {
     [Table("Tbl_Kullanicilar")]
-    public class Kullanici
+    public class User
     {
         [Key]
         [Column("kullaniciId")]
         public int? id { get; set; }
         [Column("kullaniciKullaniciAdi")]
-        public String? kullaniciAdi { get; set; }
+        public String? userName { get; set; }
         [Column("kullaniciSifre")]
-        public String? sifre { get; set; }
+        public String? password { get; set; }
         [Column("kullaniciMail")]
-        public String? mail { get; set; }
+        public String? email { get; set; }
         [Column("kullaniciAdSoyad")]
-        public String? adSoyad { get; set; }
-        public Boolean? kullaniciTipi { get; set; }
+        public String? nameAndSurname { get; set; }
+        [Column("kullaniciTipi")]
+        public Boolean? userType { get; set; }
         [Column("kullaniciAvatar")]
         public String? avatar { get; set; }
     }

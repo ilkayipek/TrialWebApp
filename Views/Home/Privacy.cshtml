@@ -8,10 +8,10 @@
 
 <tbady>
     @{
-        foreach (Kullanici item in ViewBag.kullanicilar)
+        foreach (User item in ViewBag.kullanicilar)
         {
             <h3>kullanıcı id: @item.id</h3>
-            <h3>kullanıcı ad soyad: @item.adSoyad</h3>
+            <h3>kullanıcı ad soyad: @item.nameAndSurname</h3>
         }
     }
 </tbady>
