@@ -8,7 +8,7 @@ namespace TrialWebApp.DataBase
 {
     public class ApplicationConnectionDb : DbContext
     {
-        public DbSet<Kategori> kategoriler { get; set; }
+        public DbSet<Category> kategoriler { get; set; }
         public DbSet<Kullanici> kullanicilar { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
