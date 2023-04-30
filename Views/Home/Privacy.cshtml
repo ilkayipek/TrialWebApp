@@ -1,0 +1,17 @@
+﻿@using TrialWebApp.DataBase;
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<tbady>
+    @{
+        foreach (Kullanici item in ViewBag.kullanicilar)
+        {
+            <h3>kullanıcı id: @item.id</h3>
+            <h3>kullanıcı ad soyad: @item.adSoyad</h3>
+        }
+    }
+</tbady>
