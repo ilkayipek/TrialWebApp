@@ -7,9 +7,13 @@ namespace TrialWebApp.DataBase
     public class Kategori
     {
         [Key]
-        public int? kategoriId { get; set; }
-        public String? kategoriAd { get; set; }
-        public int? kategoriAdet { get; set; }
-        public String? kategoriResim { get; set; }
+        [Column("kategoriId")]
+        public int? id { get; set; }
+        [Column("kategoriAd")]
+        public String? name { get; set; }
+        [Column("kategoriAdet")]
+        public int? piece { get; set; }
+        [Column("kategoriResim")]
+        public String? image { get; set; }
     }
 }
